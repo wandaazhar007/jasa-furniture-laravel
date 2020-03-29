@@ -1,0 +1,29 @@
+@extends('templates/core')
+@section('navbar')
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="{{ url('/') }}">Media Interior Design</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="{{ url('/furniture') }}">Furniture</a>
+                <a class="dropdown-item" href="{{ url('/interior-design') }}">Interior Design</a>
+              </div>
+          </li>
+          <li class="nav-item"><a href="{{ url('/services') }}" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="{{ url('/portfolio') }}" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
+          <li class="nav-item cta"><a href="{{ url('/interior-design') }}" class="nav-link"><span>Get in touch</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+@endsection
